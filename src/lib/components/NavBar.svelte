@@ -1,4 +1,4 @@
-<div class="flex justify-between p-3 items-center sticky top-4 m-3 rounded-sm border-black border-solid border-2">
+<div class="absolute flex justify-between p-3 items-center sticky top-4 m-3 rounded-sm border-black border-solid border-2 bg-white">
   <div>
     <span class="text-3xl"><a href="/">Cal Holt</a></span>
   </div>

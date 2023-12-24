@@ -1,17 +1,22 @@
 <script>
   import NavBar from "../../lib/components/NavBar.svelte";
   import SocialBar from "../../lib/components/SocialBar.svelte";
+  import DownloadButton from "../../lib/components/DownloadButton.svelte";
 </script>
 <NavBar />
 <h1 class="text-center text-5xl">-About-</h1>
-<div class="sm:flex-row  flex flex-col justify-between items-center py-40 p-5 sm:px-40 lg:px-80">
+<div class=" flex p-5 justify-center">
+  <DownloadButton />
+</div>
+<div class="sm:flex-row bg-black text-white m-3 flex flex-col justify-between items-center gap-10 py-10 sm:py-20 sm:px-40 lg:px-80">
   <div>
-    IMG
+    <img class="hero" src="../images/myimage.jpeg" alt="me">
   </div>
-  <div id="card" class="w-40">
+  <div id="card" class="w-40 lg:w-60">
     <p>Hi I am Cal, a newly graduated web developer from SAIT with a passion for front end development. On this page you can see my resume, languages / tools I know and a bit about me personally.</p>
   </div>
 </div>
+
 <div class="sm:flex-row gap-5 flex flex-col justify-between items-center p-5 sm:px-40 lg:px-80 shadow shadow-2xl">
  <div class="align-center ">
     <h2 class="text-3xl">Languages and Tools</h2>
@@ -37,23 +42,18 @@
     <li>NPM</li>
   </ul>
  </div>
-  
  </div> 
 </div>
 
-<div>
-  <div>
-    <span>Music I Love</span>
-  </div>
-<div>
-  <iframe title="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5GSE3gz9ZGDesTJw8hMSUw?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-</div>
 <footer class="bg-black p-5 flex content-center items-center">
   <SocialBar />
 </footer>
 <style>
   h1, h2 {
     font-family: 'Fugaz One', sans-serif;
+  }
+  .hero {
+    height: 435px;
+    width: 245px;
   }
 </style>
